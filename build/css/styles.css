@@ -457,7 +457,7 @@ header {
   min-height: 500px;
   height: 85vh;
   width: 100vw;
-  background-image: url("/images/bg-watch.jpg");
+  background-image: url("../images/bg-watch.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
