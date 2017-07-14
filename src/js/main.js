@@ -15,4 +15,13 @@ $(document).ready(function(){
 
 
 
+	$('.description > h2, .description > p, .arrow-two').hide();
+
+$(document).on('scroll', function() {
+    if($(this).scrollTop()>=$('.description').position().top-50){
+        $('.description > h2, .description > p, .arrow-two').fadeIn(1400);
+    }
+})
+
+
 }); // end ready
