@@ -639,17 +639,17 @@ header .cta .arrow-one {
 }
 
 .first .right {
-  background-image: url("/images/watch-inside.jpg");
+  background-image: url("../images/watch-inside.jpg");
 }
 
 .second .right {
   -ms-flex-order: -1;
       order: -1;
-  background-image: url("/images/man-watch.jpg");
+  background-image: url("../images/man-watch.jpg");
 }
 
 .third .right {
-  background-image: url("/images/watch-2.jpg");
+  background-image: url("../images/watch-2.jpg");
 }
 
 footer {
