@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){$(".arrow-one").click(function(t){t.preventDefault(),$("html, body").animate({scrollTop:$("#content").offset().top},1e3)}),$(".arrow-two").click(function(t){t.preventDefault(),$("html, body").animate({scrollTop:$("#first").offset().top},1e3)})});

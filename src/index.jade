@@ -8,7 +8,7 @@ html(lang='pl')
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
 		meta(name='viewport', content='width=device-width,initial-scale=1')
-		title Tytuł
+		title Watch Co. - Watches run by excellence
 		meta(name='author', content='Rafał Skwara')
 		meta(name='description', content='Change this!')
 		meta(name='keywords', content='boilerplate')
@@ -18,6 +18,40 @@ html(lang='pl')
 		meta(name="theme-color" content="#4e1545")
 
 	body
+		.container
+			.logo-bar.flex-center-vertical
+				a(href="#")
+					img(src="/images/logo.png")
+			header
+				h1 Watches run by excellence
+				p Quality forged thanks to 150 years of experience.
+				a.link(href="#")
+					button#cta.cta.flex-center-horizontal Shop Now
+						i.fa.fa-shopping-cart
+				a.arrow-one(href="#content")
+					i.fa.fa-angle-down
+			section.content#content
+				.module.description.flex-center-vertical
+					h2 We bring perfection in your hands
+					p After 150 years of hard work we know what a perfect watch means to you. It means precision, reliability, design.
+					p We strive to deliver all of this and more to every customer. And our customers know what a watch means to a man.
+					p A world.
+					a.arrow-two(href="#first")
+						i.fa.fa-angle-down
+				.module.first.flex-center-horizontal#first
+					.left.flex-center-vertical
+						h3 Precise engineering
+					.right.flex-center-vertical
+				.module.second.flex-center-horizontal
+					.left.flex-center-vertical
+						h3 Timeless design
+					.right.flex-center-vertical
+				.module.third.flex-center-horizontal
+					.left.flex-center-vertical
+						h3 Tradition meets modernism
+					.right.flex-center-vertical
+			footer.flex-center-vertical
+				p &copy; Rafał Skwara for imaginary brand of <span>Watch Co.</span>
 		
 		script(src='js/jquery-3.1.1.min.js')
 		script(src='js/main.js')
