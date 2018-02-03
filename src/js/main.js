@@ -48,7 +48,13 @@ function Controller(model, view) {
 
 	window.addEventListener('scroll', () => {
 		model.scrollY = window.scrollY;
-		
+		view.MODULES.forEach(module => {
+			if ((window.innerHeight + window.scrollY) > module.offsetTop*1.1) {
+				module.classList.add('opaque')
+			} else {
+				module.classList.remove('opaque')
+			}
+		});
 		view.LINES.forEach(line => {
 			if ((window.innerHeight + window.scrollY) > line.offsetTop) {
 				line.classList.add('visible')
