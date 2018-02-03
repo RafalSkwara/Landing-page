@@ -23,5 +23,49 @@ $(document).on('scroll', function() {
     }
 })
 
+// end jQuery, still in document.ready()
+
 
 }); // end ready
+
+function Model() {
+	this.scrollY = 0;
+	this.visibleModules=[];
+
+}
+
+
+function View(model) {
+	this.model;
+
+	this.LINES = document.querySelectorAll('.line');
+	this.MODULES = document.querySelectorAll('.module');
+}
+
+function Controller(model, view) {
+	this.model = model;
+	this.view = view;
+
+	window.addEventListener('scroll', () => {
+		model.scrollY = window.scrollY;
+		
+		view.LINES.forEach(line => {
+			if ((window.innerHeight + window.scrollY) > line.offsetTop) {
+				line.classList.add('visible')
+			} else {
+				line.classList.remove('visible')
+			}
+		})
+	});
+	//initial app state:
+
+
+}
+
+function init() {
+	let model = new Model();
+	let view = new View(model);
+	let controller = new Controller(model, view);
+}
+
+document.onload = init();

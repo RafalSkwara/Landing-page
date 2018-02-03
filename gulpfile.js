@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-	uglify = require('gulp-uglify'),
+	uglify = require('gulp-uglifyes'),
 	jade = require('gulp-jade'),
 	imagemin = require('gulp-imagemin'),
 	compass = require('gulp-compass'),
@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 gulp.task('scripts', function(){
 	gulp.src('src/js/*.js')
 		.pipe(plumber())
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(gulp.dest('build/js'));
 });
 

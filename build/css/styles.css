@@ -592,18 +592,27 @@ header .cta .arrow-one {
   font-family: "Gentium Basic", serif;
   padding: 0 10px;
 }
-.first .left h3:after,
-.first .right h3:after,
-.second .left h3:after,
-.second .right h3:after,
-.third .left h3:after,
-.third .right h3:after {
+.first .left h3 .line,
+.first .right h3 .line,
+.second .left h3 .line,
+.second .right h3 .line,
+.third .left h3 .line,
+.third .right h3 .line {
   display: block;
   content: "";
   height: 2px;
   background-color: #a13912;
-  width: 100px;
+  width: 0px;
   margin: 0 auto;
+  transition: width 0.5s ease-in-out;
+}
+.first .left h3 .line .visible,
+.first .right h3 .line .visible,
+.second .left h3 .line .visible,
+.second .right h3 .line .visible,
+.third .left h3 .line .visible,
+.third .right h3 .line .visible {
+  width: 100px;
 }
 .first .left p,
 .first .right p,
