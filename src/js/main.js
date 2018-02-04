@@ -26,12 +26,11 @@ $(document).on('scroll', function() {
 // end jQuery, still in document.ready()
 
 
-}); // end ready
+}); // end ready, end jQuery
 
 function Model() {
 	this.scrollY = 0;
-	this.visibleModules=[];
-
+	// the model created for it could be useful in the future
 }
 
 
